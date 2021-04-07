@@ -6,9 +6,40 @@ rt {
     font-size: 0.5rem;
     margin-bottom: 0.2rem;
 }
-body, h1, h2, article, p, time {
+body, h1, h2, article, p, time, nav {
     margin: 1rem 1rem 1rem 1rem;
+    background-color:blanchedalmond;
+}
+h1 {
+    color: #2f4f4f;
 }
 article {
-    border: solid 1px cornflowerblue;
+    border: solid 1px #2f4f4f;
+    border-radius: 0.2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    background-color: aquamarine;
+    color: azure;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color:red;
 }
