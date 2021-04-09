@@ -76,5 +76,23 @@
             </p>
         </section>
     </article>
+
+    <article class="diary"> 
+        <header>
+            <h2> 道路行政强制及行政复议 </h2>
+            <time>2021-04-010 04:36</time>
+        </header>
+        <section>
+            <p>
+                习惯性搜索摩托车，偶然发现了这场<a  target="_blank" href="http://tingshen.court.gov.cn/live/18629410?u_atoken=4212ae0d-d40f-4996-9b78-561b7dbc9a40&u_asession=01DBOLg_eJ72rLe1rc589yHjNtJ2yQFySHQTxDtLffCG9pH_yKnDt9wAAlL52_kPdQX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K9vXhz--z-RaxGRdBgkepWEyyV4j3xZC_SHTmaLNNGcj2BkFo3NEHBv0PZUm6pbxQU&u_asig=05Ave96I37zmFi9xC7G49KvEQRxG-tkUtPquSootKWNaULa2NA0bdQQ8XLiOHGjFmOM0ukkWCgaRkbE7mJ3QmnqxVt9FVrPyAgUULuzydVe_4gGJnI1sZozQuACJ_54-rgQ_wfFGbiyoQYU34GOiAPYxjqCpCKTlO8zo5en2FmIZ_9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzZtWsKn1eikLCT2OUIbqIzETTUBhWsnWFZD7gL1eQom4650If4f2kj_fKEmaOaXyH-3h9VXwMyh6PgyDIVSG1W8w9fcq7BqyaQT3WDyZqTicT51wE0Icu3q48fpuzWNti2id956deGfpM1I7xnPQMiKcCW1n2XMiAF112wQApB4OmWspDxyAEEo4kbsryBKb9Q&u_aref=yZkWxOoi8fZVHn73dhGsFf5N4Cs%3D">官司</a>，
+                觉得对以后有点帮助（如果摩托出行情况依旧严峻的话）就点进去看了看，结果一发不可收拾，整场2小时28分04秒堪比日剧<cite>Legal&nbsp;High</cite>，甚至还打算下载下来当作学习资料。我于是想着youtube-dl可能可以下载
+                源视频，但是尝试了一下发现中国庭审公开网不在受支持的网站当中……想着网页都下载下来了，怎么可能找不到视频原址，于是查看源码，发现<code>http://tingshen.court.gov.cn/live/18629410</code>被几个函数
+                转换成<code>http://tingshen.court.gov.cn/live/18629410?u_atoken=4212ae0d-d40f-4996-9b78-561b7dbc9a40&u_asession=01DBOLg_eJ72rLe1rc589yHjNtJ2yQFySHQTxDtLffCG9pH_yKnDt9wAAlL52_kPdQX0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K9vXhz--z-RaxGRdBgkepWEyyV4j3xZC_SHTmaLNNGcj2BkFo3NEHBv0PZUm6pbxQU&u_asig=05Ave96I37zmFi9xC7G49KvEQRxG-tkUtPquSootKWNaULa2NA0bdQQ8XLiOHGjFmOM0ukkWCgaRkbE7mJ3QmnqxVt9FVrPyAgUULuzydVe_4gGJnI1sZozQuACJ_54-rgQ_wfFGbiyoQYU34GOiAPYxjqCpCKTlO8zo5en2FmIZ_9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzZtWsKn1eikLCT2OUIbqIzETTUBhWsnWFZD7gL1eQom4650If4f2kj_fKEmaOaXyH-3h9VXwMyh6PgyDIVSG1W8w9fcq7BqyaQT3WDyZqTicT51wE0Icu3q48fpuzWNti2id956deGfpM1I7xnPQMiKcCW1n2XMiAF112wQApB4OmWspDxyAEEo4kbsryBKb9Q&u_aref=yZkWxOoi8fZVHn73dhGsFf5N4Cs%3D</code>
+                这个网站了，查看该网站，发现和前者是一样的，于是我再次查了下源码，终于发现了.m3u8的视频了，用vlc转成webm有画面没声音，最后根据网上说的转成了ts文件，这下正常播放了。没想到JS的知识对于
+                我来说最先不是被用来建网站用的，不过也算是学以致用了。
+            </p>
+        </section>
+    </article>
+
 </body>
 </html>
